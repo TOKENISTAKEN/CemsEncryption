@@ -1,2 +1,2 @@
 # CemsEncryption
-Using is so simple just command that python3 main.py
+Using is so simple just type that command that python3 main.py 
