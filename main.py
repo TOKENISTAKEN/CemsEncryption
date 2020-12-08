@@ -13,6 +13,8 @@ def encrypt(ar):
     thirdKey = random.randrange(4,9)
     for i in ar:
         text = text + str(ord(i) * key) + "a"
+    #firstResult = text + str(key * secondKey)
+    #secondResult = text + str(key * secondKey) + str(secondKey) + "b"
     thirdResult = text + str(key * secondKey * thirdKey) + str(secondKey * thirdKey) + "b" + str(thirdKey) + "f"
     return thirdResult
 
