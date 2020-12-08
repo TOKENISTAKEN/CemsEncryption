@@ -88,7 +88,10 @@ if req == "e" or req == "e":
 
 if req == "d" or req == "D":
     text = str(input("Please Input your encrypted text: "))
-    decrypted = decrypt(text)
-    print("Your decrypted text is: ")
-    print("**********")
-    print(decrypted)
+    try:
+        decrypted = decrypt(text)
+        print("Your decrypted text is: ")
+        print("**********")
+        print(decrypted)
+    except:
+        print("This text is not encrypted text")
