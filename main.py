@@ -71,32 +71,24 @@ print()
 
 req = str(input("If you want to encrypt a text please enter E, If you want to decrypt a text please enter D: "))
 
-# or did not worked
-if req == "e":
+if req == "e" or req == "e":
     text = str(input("Please enter your text: "))
     encrypted = encrypt(text)
+    while  1:
+        try:
+            decrypt(encrypted)
+            break
+        except:
+            encrypted = encrypt(text)
+
+
     print("Your encrypted text is: ")
     print("**********")
     print(encrypted)
 
-if req == "d":
+if req == "d" or req == "D":
     text = str(input("Please Input your encrypted text: "))
     decrypted = decrypt(text)
     print("Your decrypted text is: ")
     print("**********")
     print(decrypted)
-
-if req == "E":
-    text = str(input("Please enter your text: "))
-    encrypted = encrypt(text)
-    print("Your encrypted text is: ")
-    print("**********")
-    print(encrypted)
-
-if req == "D":
-    text = str(input("Please Input your encrypted text: "))
-    decrypted = decrypt(text)
-    print("Your decrypted text is: ")
-    print("**********")
-    print(decrypted)
-# or did not worked
