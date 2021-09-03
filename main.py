@@ -64,8 +64,6 @@ def decrypt(ar):
     return text
 
 print("This is a encryption algorithm. Creator of this algorithm is Cem Boran Diribaş.")
-print("Github: https://github.com/cemborandiribas")
-print("Twitter: https://twitter.com/cemborandiribas")
 print("Version: 0.1")
 print()
 
